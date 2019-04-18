@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="开启步骤说明(点击查看视频演示)">
+        <PreferenceScreen
+            android:key="第1步：启用桌面悬浮框"
+            android:title="第1步：启用桌面悬浮框(必须)"
+            >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="第2步：允许后台运行"
+            android:title="第2步：允许后台运行">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="第3步：开启无障碍服务"
+            android:title="第3步：开启无障碍服务(必须)">
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="开启设置">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="桌面悬浮框"
+            android:title="桌面悬浮框(必须)">
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="无障碍服务"
+            android:title="无障碍服务(必须)">
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key=""
+        android:title="">
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:key="微信啪啪大师功能介绍"
+        android:title="微信啪啪大师功能介绍">
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="仿PC端，拖动鼠标截取屏幕部分区域"
+            android:title="手动截图">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="录制手机界面视频"
+            android:title="桌面录屏">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="打开附近人页面，自动操作加人操作"
+            android:title="自动加友">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="自动打开朋友圈，点赞最近10页的朋友圈动态"
+            android:title="自动点赞">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="可以查看微信缓存在本地的图片垃圾数据，方便及时清理"
+            android:title="图片缓存">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="可以查看微信缓存在本地的视频垃圾数据，方便及时清理"
+            android:title="视频缓存">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="检查哪些好友把我删了，并且自动将该类还有删除（每日检查人数为200人，朋友多的，可来日再次检查）"
+            android:title="僵尸查杀">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="可以自动清空聊天会话列表，再也不用逐个删除聊天了。"
+            android:title="清空聊天">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="自动抢来自朋友，朋友圈的红包"
+            android:title="抢红包">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="给微信加锁，防止玩你手机的其他用户偷看你的微信消息"
+            android:title="微信加锁">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="不方便回复的时候，自动给消息回复正在忙碌的提示信息(请先禁用手机锁屏加密设置)"
+            android:title="自动回复">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="将以机器人身份，根据收到的消息，自动回复给对方响应的消息，制造聊天假象(仅在聊天页有效，退出后无效)"
+            android:title="机器人陪聊">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="收到短信验证码时，将验证码快速复制到粘贴板，方便用户再也不需要去看、记验证码了"
+            android:title="验证码快速复制">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:defaultValue="true"
+            android:persistent="true"
+            android:summary="编辑自定义群发内容，自动群发给所有微信朋友"
+            android:title="微信群发">
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.liuhai.wcbox">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>    <!-- 如果需要精确定位的话请加上此权限 -->
+
+    <permission android:name="android.permission.DEVICE_POWER"/>
+
+
+    <application
+        android:name=".lock.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".lock.act.EmptyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+
+            <!--<data-->
+            <!--android:host="EmptyActivity"-->
+            <!--android:scheme="com.android.wcbox.lock"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <service
+            android:name=".lock.service.PrictureScreenCutService"
+            android:exported="false"/>
+
+        <activity
+            android:name=".lock.act.SettingsActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".lock.act.InfoActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".lock.act.PrictureScreenCutActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"/>
+        <activity
+            android:name=".lock.act.PreviewScreenCutActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"/>
+        <activity
+            android:name=".lock.act.EditMessageActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"/>
+        <activity
+            android:name=".lock.act.WeChatLockActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".lock.act.WCImageActivity"
+            android:autoRemoveFromRecents="true"
+            android:label="图片缓存"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".lock.act.WCVideoActivity"
+            android:autoRemoveFromRecents="true"
+            android:label="视频缓存"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".lock.act.WCImageViewpagerActivity"
+            android:autoRemoveFromRecents="true"
+            android:label="图片缓存"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".lock.webview.BrowserActivity"
+            android:autoRemoveFromRecents="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".lock.act.YanshiActivity"
+            android:autoRemoveFromRecents="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".lock.act.MainTabActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".lock.act.WebViewActivity"/>
+        <activity
+            android:name=".lock.SplashActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AdsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.DELETE"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <data
+                    android:host="SplashActivity"
+                    android:scheme="com.android.candy.lock"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lock.FloatSplashActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AdsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.DELETE"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <data
+                    android:host="FloatSplashActivity"
+                    android:scheme="com.android.candy.lock"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".lock.service.MyActionService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/splash"/>
+        </service>
+        <service android:name="com.liuhai.wcbox.lock.service.PushUmengMessageService"/>
+
+        <receiver android:name=".lock.AppInstallReceiver"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <!--
+        bai_du
+        channel1 channel2 channel3
+        http://wd4.lyyapp.com/app/20170907/papa_share.apk
+         -->
+
+
+        <meta-data android:name="UMENG_APPKEY"
+                   android:value="5c67cfccb465f5a3b7000451"/>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="d77e0aa1b823b1cdc66f12f3f7079f8e"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="liuhai"/>
+
+
+        <!--<service android:name="com.qq.e.comm.DownloadService"-->
+                 <!--android:exported="false">-->
+
+        <!--</service>-->
+        <!--<activity android:name="com.qq.e.ads.ADActivity"-->
+                  <!--android:excludeFromRecents="true"-->
+                  <!--android:configChanges="keyboard|keyboardHidden|orientation|screenSize">-->
+        <!--</activity>-->
+    </application>
+
+</manifest>

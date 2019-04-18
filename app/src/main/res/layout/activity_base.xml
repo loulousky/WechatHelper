@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/activity_base"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.youmi.android.addemo.BaseActivity"
+	>
+
+	<TextView
+		android:id="@+id/tv_main_top_tag"
+		style="@style/style_text"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:text="@string/tv_main_top_tag"
+		android:textSize="24sp"
+		/>
+
+	<TextView
+		android:id="@+id/tv_main_version_info"
+		style="@style/style_text"
+		android:layout_below="@id/tv_main_top_tag"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="12dp"
+		android:text="@string/tv_main_version_info"
+		android:textSize="18sp"
+		/>
+
+</RelativeLayout >

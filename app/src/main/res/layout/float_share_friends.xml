@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/rootview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:alpha="0.97"
+             android:background="@drawable/wechat_sp"
+    >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="正在群发"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="90dp"/>
+
+</FrameLayout>

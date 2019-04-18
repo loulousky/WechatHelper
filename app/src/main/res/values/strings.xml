@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">微商盒子</string>
+    <string name="action_settings" >Settings</string >
+
+    <!--主窗口-->
+    <string name="tv_main_top_tag" >有米</string >
+    <string name="tv_main_version_info" >AOS SDK V</string >
+    <string name="btn_main_show_spot_ad" >插屏广告演示</string >
+    <string name="btn_main_show_slideable_spot_ad" >轮播插屏广告演示</string >
+    <string name="btn_main_show_native_spot_ad" >原生插屏广告演示</string >
+    <string name="btn_main_show_video_ad" >视频广告演示</string >
+    <string name="btn_main_show_native_video_ad" >原生视频广告演示</string >
+    <string name="btn_main_check_ad_settings" >检查广告配置</string >
+    <string name="tv_main_bottom_tag" >Powered by YouMi</string >
+
+    <!--各种广告形式窗口展示按钮-->
+    <string name="btn_show_spot_ad" >展示插屏广告</string >
+    <string name="btn_show_slideable_spot_ad" >展示轮播插屏广告</string >
+    <string name="btn_show_native_spot_ad" >展示原生插屏广告</string >
+    <string name="btn_show_video_ad" >展示视频广告</string >
+    <string name="btn_show_native_video_ad" >展示原生视频广告</string >
+
+
+    <string name="btn_show_offerswall">展示积分墙(全屏)</string>
+    <string name="btn_show_offerswall_dialog">展示积分墙(对话框)</string>
+    <string name="btn_award_points">奖励10积分</string>
+    <string name="btn_spend_points">消费20积分</string>
+    <string name="btn_get_online_config">获取有米在线参数</string>
+    <string name="btn_check_reach_ntp_time">是否达到指定网络时间</string>
+    <string name="btn_check_ad_config">检查广告配置</string>
+</resources>

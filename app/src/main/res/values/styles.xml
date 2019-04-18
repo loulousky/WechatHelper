@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="tab_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/tab_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="AdsTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="normalColor" format="color"/>
+        <attr name="selecColor" format="color"/>
+        <attr name="indexSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="progressBorderWidth" format="dimension" />
+        <attr name="showArrow" format="boolean" />
+    </declare-styleable>
+    <style name="Transparent" >
+        <item name="android:windowBackground" >@android:color/transparent</item >
+        <item name="android:windowNoTitle" >true</item >
+        <item name="android:windowIsTranslucent" >true</item >
+        <item name="android:windowAnimationStyle" >@android:style/Animation.Translucent</item >
+    </style >
+
+    <style name="dialogWindowAnim"
+           mce_bogus="1"
+           parent="android:Animation" >
+        <item name="android:windowEnterAnimation" >@anim/anim_dialog_enter</item >
+        <item name="android:windowExitAnimation" >@anim/anim_dialog_exit</item >
+    </style >
+
+    <style name="style_text" >
+        <item name="android:layout_width" >wrap_content</item >
+        <item name="android:layout_height" >wrap_content</item >
+        <item name="android:textColor" >#3baa24</item >
+    </style >
+
+    <style name="style_button" >
+        <item name="android:layout_width" >match_parent</item >
+        <item name="android:layout_height" >wrap_content</item >
+        <item name="android:textColor" >@android:color/white</item >
+        <item name="android:textSize" >16sp</item >
+        <item name="android:layout_marginLeft" >60dp</item >
+        <item name="android:background" >@drawable/btn_background</item >
+        <item name="android:layout_marginRight" >60dp</item >
+    </style >
+
+
+    <style name="TextViewStyle" >
+        <item name="android:layout_width" >fill_parent</item >
+        <item name="android:layout_height" >wrap_content</item >
+        <item name="android:layout_margin" >10dp</item >
+        <item name="android:textAppearance" >?android:attr/textAppearanceLarge</item >
+    </style >
+
+    <style name="BtnStyle"
+           parent="TextViewStyle" >
+        <item name="android:background" >@drawable/buttonbg</item >
+        <item name="android:textAppearance" >?android:attr/textAppearanceMedium</item >
+    </style >
+</resources>

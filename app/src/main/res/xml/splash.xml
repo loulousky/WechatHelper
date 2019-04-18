@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeNotificationStateChanged|typeViewScrolled|typeWindowsChanged|typeWindowContentChanged|typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews|flagReportViewIds"
+    android:canRetrieveWindowContent="true"
+    android:notificationTimeout="100"
+    android:packageNames="com.tencent.mm,android"
+
+    tools:ignore="UnusedAttribute"/>
+    <!--typeNotificationStateChanged|typeViewScrolled|typeWindowsChanged|typesViewClicked|typeWindowContentChanged|typeContextClicked|typeViewLongClicked|typeWindowStateChanged-->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+    <shape>
+        <solid android:color="#eee"/>
+        <stroke android:width="0px"
+                android:color="#000"
+                android:dashGap="0px"
+                android:dashWidth="0px"/>
+        <corners android:bottomLeftRadius="12dp"
+                 android:bottomRightRadius="12dp"
+                 android:topLeftRadius="12dp"
+                 android:topRightRadius="12dp"/>
+    </shape>
+</item>
+<item>
+    <shape>
+        <solid android:color="#7789fe"/>
+        <stroke android:width="0px"
+                android:color="#7789fe"
+                android:dashGap="0px"
+                android:dashWidth="0px"/>
+        <corners android:bottomLeftRadius="12dp"
+                 android:bottomRightRadius="12dp"
+                 android:topLeftRadius="12dp"
+                 android:topRightRadius="12dp"/>
+    </shape>
+</item>
+
+
+</selector>

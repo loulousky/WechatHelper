@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/rootview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:alpha="0.97"
+             android:background="@drawable/wechat_sp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="正在检测..."
+            android:textColor="#e6f113"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:padding="4dp"
+            android:textColor="#fff"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:lines="6"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ddd"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="请勿退出"
+
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/checking_close"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+</FrameLayout>

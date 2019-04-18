@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#000"
+             android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:onClick="clear"
+        android:background="@drawable/selector_clear_button"
+        android:text="清空缓存"/>
+    <TextView
+        android:id="@+id/impty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:onClick="clear"
+        android:textSize="20sp"
+        android:text="缓存为空"/>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:numColumns="4"/>
+</FrameLayout>

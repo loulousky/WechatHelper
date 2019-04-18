@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.robot.ui">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 网络权限 -->
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="android.test.runner"/> <!-- 测试环境 -->
+
+
+    </application>
+
+    <!-- 测试环境 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="this is a test "
+        android:targetPackage="com.robot.ui">
+    </instrumentation>
+
+</manifest>

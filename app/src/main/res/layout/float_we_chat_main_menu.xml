@@ -1,0 +1,375 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#8000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_we_chat_menu"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="0dp"
+            android:background="#0000"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chasha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_jiance"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="僵尸查杀"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/qianghongbao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:drawableTop="@drawable/fx_qianghongbao"
+                        android:focusable="false"
+                        android:padding="10dp"
+                        android:text="抢红包"
+                        android:textColor="#000"
+                        android:textSize="12sp"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/red_pacakge"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/fx_duihao_d"
+                    />
+
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#0000"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/weixin_jiasuo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0000"
+                        android:drawableTop="@drawable/fx_weixinsuo"
+                        android:focusable="false"
+                        android:padding="10dp"
+                        android:text="微信加锁"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/weixin_jiasuo_checkbox"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/fx_duihao_s"
+                    />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#0000"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/zidonghuifu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0000"
+                        android:drawableTop="@drawable/fx_zidonghuifu"
+                        android:focusable="false"
+                        android:padding="10dp"
+                        android:text="自动回复"
+                        android:textColor="#000"
+                        android:textSize="12sp"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/zidonghuifu_checkbox"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/fx_duihao_d"
+                    />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#0000"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zidongjiahaoyou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/zidongjiahaoyou"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="自动加友"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/autozan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_zan"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="自动点赞"
+                android:textColor="#000"
+                android:textSize="12sp"
+                />
+
+
+            <Button
+                android:id="@+id/dashang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/jietu"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="手动截图"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/shiqu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/lvpin"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="桌面录屏"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="0dp"
+            android:background="#0000"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/fx_paishe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/qingkonghuihua"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="清空聊天"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/tianqi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_tianqi"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="微天气"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+
+            <Button
+                android:id="@+id/tupianhuancun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_tupian_c"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="图片缓存"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/shipinhuancun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_shipin_c"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="视频缓存"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#0000"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fx_xiangce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:background="#0000"
+                android:drawableTop="@drawable/miliao"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="加密聊天"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/weixinrewen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/weixinqunfa"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="微信群发"
+                android:textColor="#000"
+                android:textSize="12sp"
+                />
+
+
+            <Button
+                android:id="@+id/papashipin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/fx_shipin"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="微视频"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/xiaoliaobaichu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:drawableTop="@drawable/xiaoliaobaichu"
+                android:focusable="false"
+                android:padding="10dp"
+                android:text="笑料百出"
+                android:textColor="#000"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/adverview"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/rootview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipChildren="false"
+              android:clipToPadding="false"
+              android:onClick="close"
+              android:gravity="center"
+              android:background="#8000"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_main_menu_button01"
+            android:text="工具设置"
+            android:onClick="action01"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_main_menu_button02"
+            android:text="手指截屏" android:layout_marginLeft="100dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="action02"
+            android:textColor="#fff"/>
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_main_menu_button03"
+            android:text="桌面录屏"
+            android:onClick="action03"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_main_menu_button04"
+            android:text="分享好友"
+            android:id="@+id/action4"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:onClick="action04"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_weixin_bg"
+            />
+        <Button
+            android:id="@+id/weixin"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:background="@drawable/weixinlogo_pre"
+            android:onClick="weixin"
+            />
+    </FrameLayout>
+
+</LinearLayout>

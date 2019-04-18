@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item>-->
+    <!--<shape>-->
+    <!--<solid android:color="#内部颜色"/>-->
+    <!--<stroke android:width="边宽px"-->
+    <!--android:color="#边颜色"-->
+    <!--android:dashGap="虚线间隔dp"-->
+    <!--android:dashWidth="虚线宽度dp"/>-->
+    <!--<corners android:bottomLeftRadius="10dp"-->
+    <!--android:bottomRightRadius="10dp"-->
+    <!--android:topLeftRadius="10dp"-->
+    <!--android:topRightRadius="10dp"/>-->
+    <!--</shape>-->
+    <!--</item>-->
+
+    <!--默认状态-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#b1c9da"/>
+            <stroke android:width="0px"
+                    android:color="#000"
+                    android:dashGap="0px"
+                    android:dashWidth="0px"/>
+            <corners android:bottomLeftRadius="10dp"
+                     android:bottomRightRadius="10dp"
+                     android:topLeftRadius="0px"
+                     android:topRightRadius="0px"/>
+        </shape>
+    </item>
+    <!--默认状态-->
+    <item>
+        <shape>
+            <solid android:color="#eee"/>
+            <stroke android:width="0px"
+                    android:color="#000"
+                    android:dashGap="0px"
+                    android:dashWidth="0px"/>
+            <corners android:bottomLeftRadius="10dp"
+                     android:bottomRightRadius="10dp"
+                     android:topLeftRadius="0px"
+                     android:topRightRadius="0px"/>
+        </shape>
+    </item>
+
+
+</selector>
